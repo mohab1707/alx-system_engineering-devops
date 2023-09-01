@@ -1,0 +1,2 @@
+#!/bin/bansh
+telnet towel.blinkenlights.nl
