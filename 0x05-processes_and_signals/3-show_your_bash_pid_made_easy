@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+while read -r pid name; do
+  echo "$pid $name"
+done < <(pgrep -af bash)
