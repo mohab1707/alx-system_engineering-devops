@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# This script is giving information about the school file
+
+# Check if the file exists using the -e operator
+if [ -e school ]
+then
+  # Print "school file exists" to the standard output
+  echo "school file exists"
+
+  # Check if the file is empty using the -s operator
+  if [ -s school ]
+  then
+    # Print "school file is not empty" to the standard output
+    echo "school file is not empty"
+  else
+    # Print "school file is empty" to the standard output
+    echo "school file is empty"
+  fi
+
+  # Check if the file is a regular file using the -f operator
+  if [ -f school ]
+  then
+    # Print "school is a regular file" to the standard output
+    echo "school is a regular file"
+  fi
+else
+  # Print "school file does not exist" to the standard output
+  echo "school file does not exist"
+fi

@@ -1,0 +1,6 @@
+shopt -s dotglob
+for file in *
+do
+  echo "$file" | cut -d "-" -f 2-
+done
+shopt -u dotglob

@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# This script is displaying numbers from 1 to 100 with FizzBuzz logic
+
+# Initialize the counter variable to 1
+counter=1
+
+# Loop while the counter is less than or equal to 100
+while [ $counter -le 100 ]
+do
+  # Check if the counter is a multiple of 3 and 5 using the -eq operator and the modulo operator %
+  if [ $ ( ($counter % 15)) -eq 0 ]
+  then
+    # Print "FizzBuzz" to the standard output
+    echo "FizzBuzz"
+  # Check if the counter is a multiple of 3 using the -eq operator and the modulo operator %
+  elif [ $ ( ($counter % 3)) -eq 0 ]
+  then
+    # Print "Fizz" to the standard output
+    echo "Fizz"
+  # Check if the counter is a multiple of 5 using the -eq operator and the modulo operator %
+  elif [ $ ( ($counter % 5)) -eq 0 ]
+  then
+    # Print "Buzz" to the standard output
+    echo "Buzz"
+  else
+    # Print the counter value to the standard output
+    echo "$counter"
+  fi
+
+  # Increment the counter by 1
+  ((counter++))
+done
