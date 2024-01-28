@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# This script is displaying numbers from 1 to 20 and displays bad luck from China for the 4th loop iteration, bad luck from Japan for the 9th loop iteration, and bad luck from Italy for the 17th loop iteration
+
+# Initialize the counter variable to 1
+counter=1
+
+# Loop while the counter is less than or equal to 20
+while [ $counter -le 20 ]
+do
+  # Print the counter value to the standard output
+  echo "$counter"
+
+  # Check the counter value with a case statement
+  case $counter in
+    4)
+      # Print "bad luck from China" to the standard output
+      echo "bad luck from China"
+      ;;
+    9)
+      # Print "bad luck from Japan" to the standard output
+      echo "bad luck from Japan"
+      ;;
+    17)
+      # Print "bad luck from Italy" to the standard output
+      echo "bad luck from Italy"
+      ;;
+    *)
+      # Do nothing
+      ;;
+  esac
+
+  # Increment the counter by 1
+  ((counter++))
+done
