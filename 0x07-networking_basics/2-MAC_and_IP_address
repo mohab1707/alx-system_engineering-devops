@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script prints the answers to networking questions.
+
+echo "2"
+echo "3"
