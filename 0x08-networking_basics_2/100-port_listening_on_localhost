@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script listens on port 98 on localhost.
+
+# Function to handle incoming connections
+handle_connection() {
+    while true; do
+        # Read data from the connection
+        data=$(nc -l -p 98 -q 1)
+        if [ -n "$data" ]; then
+            echo "$data"
+        fi
+    done
+}
+
+# Start listening on port 98
+echo "Starting my script."
+handle_connection
