@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script prints the answers to the OSI model questions.
+echo "2"
+echo "2"
